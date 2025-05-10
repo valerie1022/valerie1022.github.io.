@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Estilos CSS personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .seccion-padding {
+            padding-top: 6rem;
+            padding-bottom: 6rem;
+        }
+        .heading-resaltado {
+            color: #6b7280;
+        }
+        .card-proyecto {
+            background-color: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-proyecto:hover {
+            transform: translateY(-0.5rem);
+            box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15), 0 3px 6px -1px rgba(0, 0, 0, 0.08);
+        }
+        .card-proyecto img {
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+            object-fit: cover;
+            height: 200px;
+            width: 100%;
+        }
+        .card-proyecto h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+        }
+        .card-proyecto p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: #4b5563;
+            flex-grow: 1;
+        }
+        .habilidades-lista {
+            list-style-type: disc;
+            padding-left: 1.25rem;
+        }
+        .habilidades-lista li {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #4b5563;
+        }
+        .contacto-info {
+            font-size: 1rem;
+            line-height: 1.75rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-4">
+            <h1 class="text-2xl font-semibold text-gray-800">Mi Portafolio</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="acerca-de-mi" class="seccion-padding">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4"><span class="heading-resaltado">Acerca de</span> Mí</h2>
+                        <p class="text-lg text-gray-600">
+                            Hola, soy Valerie me gusta mucho el deporte en especial el futbol me gusta mucho el gimnasio y estoy dispuesta siempre ayudar a las personas con el entrenamiento físico y también con planes alimenticios es mi pasión ser preparadora física
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/400x400/EEE/31343C" alt="Mi Foto" class="rounded-full shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion-padding bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center"><span class="heading-resaltado">Mis</span> Proyectos</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card-proyecto">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="Proyecto 1">
+                        <h3>Crear mi propio gimnasio</h3>
+                        <p>Descripción del proyecto 1. Este proyecto fue un desafío interesante que involucró la integración de varias APIs y la creación de una interfaz de usuario intuitiva.</p>
+                    </div>
+                    <div class="card-proyecto">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="Proyecto 2">
+                        <h3>Tener mi propia escuela de deportes</h3>
+                        <p>Descripción del proyecto 2.  Desarrollé una aplicación web completa con autenticación de usuario, gestión de datos y una experiencia de usuario optimizada.</p>
+                    </div>
+                    <div class="card-proyecto">
+                        <img src="https://placehold.co/600x400/EEE/31343C" alt="Proyecto 3">
+                        <h3>Tener una página de línea alimenticia</h3>
+                        <p>Descripción del proyecto 3.  Este proyecto destacó por su enfoque en la accesibilidad y el rendimiento, logrando una alta puntuación en Lighthouse.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="seccion-padding">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center"><span class="heading-resaltado">Mis</span> Habilidades</h2>
+                <ul class="habilidades-lista">
+                    <li>Capacidad de evaluación y diagnóstico físico</li>
+                    <li>Conocimiento técnico de un preparador físico</li>
+                    <li>Diseño y planificación de entrenamiento</li>
+                    <li>Comunicación efectiva</li>
+                    <li>Capacidad de observación y corrección técnica</li>
+                    <li>Liderazgo y motivación</li>
+                    <li>Adaptabilidad</li>
+                    <li>Gestión emocional y empatía</li>
+                    <li>Conocimiento de nutrición</li>
+                    <li>Conocimiento de recuperación</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-padding bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center"><span class="heading-resaltado">Contacto</span></h2>
+                <div class="text-center contacto-info">
+                    <p>Puedes contactarme a través de:</p>
+                    <p>Email: <a href="mailto:tu.email@ejemplo.com" class="text-blue-600 hover:underline">tu.email@ejemplo.com</a></p>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/tuperfil" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">linkedin.com/tuperfil</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2024 Mi Portafolio. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+<script>
+    // Efecto de desplazamiento suave al hacer clic en los enlaces de navegación
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Resaltar la sección activa en la barra de navegación
+    window.addEventListener('scroll', () => {
+        const secciones = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('header nav a');
+
+        secciones.forEach((seccion, index) => {
+            const seccionTop = seccion.offsetTop;
+            const seccionHeight = seccion.clientHeight;
+            if (window.scrollY >= seccionTop - 100 && window.scrollY < seccionTop + seccionHeight - 100) {
+                navLinks.forEach(link => link.classList.remove('active'));
+                navLinks[index].classList.add('active');
+            }
+        });
+    });
+
+    // Mostrar un mensaje en la consola cuando la página se carga
+    console.log("¡Bienvenido a mi portafolio!");
+</script>
+</body>
+</html>
